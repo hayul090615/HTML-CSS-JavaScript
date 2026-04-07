@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    div {
+        background-color: rgb(81, 170, 64);
+        margin: 5px;
+    }
+
+    #hello {
+        background-color: white;
+        display: none; /* 처음에는 숨김 */
+    }
+
+    #other {
+        height: 100%;
+        width: 100%; 
+        margin: 0;
+        padding: 0;
+    }
+
+    button {
+        background-color: rgb(255, 0, 0);
+        color: white;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div id="hello">
+        <div><b>Holy guacamole!</b> You should check in on some of those fields below.</div>
+        <div><b>Holy guacamole!</b> You should check in on some of those fields below.</div>
+    </div>
+
+    <button onclick="onView(true)">누르기</button>
+    
+    <div id="other" onclick="onView(false)">요기는 없는 부분</div>
+
+    <script>
+        function onView(isOn) {
+          document.getElementById("hello").style.display = isOn ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
