@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    background-color: #c3cfab;
+    }
+    .login-box {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        width: 250px;
+    }
+    .login-box h2 {
+        margin-bottom: 20px;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+    }
+    .login-box input[type="submit"] {
+        margin-top: 10px;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        background-color: #ddd;
+        cursor: pointer;
+    }
+    .login-box a {
+        display: block;
+        margin-top: 10px;
+        color: blue;
+        text-decoration: none;
+    }
+</style>
+<body>
+    <div class="login-box">
+        <h2>로그인</h2>
+
+        <input type="text" placeholder="ID">
+        <input type="password" placeholder="Password">
+
+        <div style="text-align:left; margin-top:5px;">
+            <input type="checkbox"> 로그인 정보 저장
+        </div>
+
+        <input type="submit" value="Sign in" onclick="alert('로그인 성공!')">
+
+        <a href="index.html">회원가입</a>
+</div>
+</body>
+</html>
